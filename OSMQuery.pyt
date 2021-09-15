@@ -628,7 +628,7 @@ class GetOSMDataExpert(object):
                 direction="Input",
         )
         now = datetime.datetime.utcnow()
-        param1.value = now.strftime("%d.%m.%Y %H:%M:%S")
+        param1.value = now
         param_out0 = arcpy.Parameter(
                 displayName="Layer containing OSM point data",
                 name="out_nodes",
